@@ -37,8 +37,11 @@ typedef struct {
 class FSR {
 	
 	public:
+	
+		static t_result* get_reading(int, t_result* ); // Una lectura del FSR, sin evaluacion.
+		static t_result* eval_reading(t_reading_limits* , t_result* ); // Evaluar una lectura que se da por parametro.
 		static t_result* read_and_eval(int , t_reading_limits* , t_result* );	// Una lectura del FSR y evaluacion segun lecturas
-
+		
 };
 
 #endif // FSR_H
