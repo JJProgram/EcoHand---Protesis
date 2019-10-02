@@ -41,7 +41,7 @@ t_result* FSR::get_reading(int analogPin, t_result* res){
 										Si res es NULL, devuelve NULL.
 
 */
-t_result* FSR::eval_reading(t_reading_limits* , t_result* ){
+t_result* FSR::eval_reading(t_reading_limits* rLim, t_result* res){
 	
 	if ( res == NULL )
 		return NULL;
